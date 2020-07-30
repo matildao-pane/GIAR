@@ -1,19 +1,6 @@
 # GIAR
 [![CodeFactor](https://www.codefactor.io/repository/github/seraogianluca/GIAR/badge/master)](https://www.codefactor.io/repository/github/seraogianluca/GIAR/overview/master)
 
-# Data Mining and Machine Learning
-A service implemented for the workgroup project of the Data Mining and Machine Learning course of the Artificial Intelligence and Data Engineering Master Degree at University of Pisa.
-
-1) [Project Documentation](/docs/Datamining/sentimentanalysisdoc.md)
-2) [Training-set](/docs/Datamining/dataset/training_set.arff)
-3) [Training-set data distribution](/docs/Datamining/dataset/Tweets_distribution.xlsx)
-4) [Final Test datasets](/docs/Datamining/dataset/classified_data/csv)
-5) [Test datasets confusion matrices](/docs/Datamining/dataset/classified_data/Confusion_matrices.xlsx)
-6) [Weka test result buffers](/docs/Datamining/weka_tests)
-
-## Credits
-Application designed and developed by Barigliano Lorenzo, Serao Gianluca.
-
 # Large-Scale and Multi-Structured Databases
 A service for the workgroup tasks of the Large-Scale and Multi-Structured Databases course of the Artificial Intelligence and Data Engineering Master Degree at University of Pisa.
 
@@ -49,15 +36,4 @@ driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic("usernam
 The connection string is set to localhost:
 ````java
 client = MongoClients.create("mongodb://localhost:27017/");
-````
-
-## Twitter API configuration
-To run the sentiment analysis a Twitter API token is required. To load the token create a `twitter4j.properties` file in the `resources` folder. The file must contain the following lines:
-
-```
-http.useSSL=true
-oauth.consumerKey =       Twitter_API_Token
-oauth.consumerSecret =    Twitter_API_Token
-oauth.accessToken =       Twitter_API_Token
-oauth.accessTokenSecret = Twitter_API_Token
 ````
